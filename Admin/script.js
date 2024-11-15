@@ -28,7 +28,7 @@ function updateWelcomeMessage() {
             const role = snapshot.child('role').val();
             const firstName = snapshot.child('firstName').val();
 
-            if (role === 'teacher' && firstName) {
+            if (role === 'admin' && firstName) {
                 document.querySelector('.welcome h2').textContent = `Welcome back, ${firstName}!`;
             } else {
                 document.querySelector('.welcome h2').textContent = 'Welcome back!';

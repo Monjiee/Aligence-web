@@ -73,6 +73,42 @@
                     </div>
                 </div>
             </div>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <button class="dropbtn" id="roleDropdownButton">All Roles</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="filterByRole('all')">All</a>
+                        <a href="#" onclick="filterByRole('teacher')">Teacher</a>
+                        <a href="#" onclick="filterByRole('student')">Student</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn" id="statusButton">Status</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="selectStatus('All')">All</a>
+                        <a href="#" onclick="selectStatus('Online')">Online</a>
+                        <a href="#" onclick="selectStatus('Offline')">Offline</a>
+                    </div>
+                </div>
+            </div>
+            
+                
+                <table id="usersTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- User rows will be dynamically populated here -->
+                    </tbody>
+                </table>                
+            </main>
         </main>
     </div>
     <!---------ApexCharts-------->
